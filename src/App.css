@@ -110,6 +110,7 @@ button {
 }
 .welcome .right {
   width: 60%;
+  display: grid;
   align-items: center;
 }
 .welcome .left h1 {
@@ -341,7 +342,6 @@ button {
   color: var(--lightGrey);
   margin-top: 3rem;
   margin-bottom: 3rem;
-
 }
 
 .solutions .box button {
@@ -554,7 +554,8 @@ button {
   color: white;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1280px) {
+/*phones and tabs*/
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .navCont {
     width: 100%;
     height: 10vh;
@@ -594,9 +595,9 @@ button {
 
   .offCanvasMenu {
     background: var(--blueTwo);
-    width: 60%;
+    width: 60%; /* Updated width to take up full screen */
     height: 100vh;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     display: flex;
@@ -619,6 +620,7 @@ button {
     border: none;
     color: white;
     width: 70%;
+    font-size: 0.8rem;
   }
 
   /*WELCOME COMP mobile*/
@@ -981,7 +983,6 @@ button {
 
     min-height: 0vh;
     gap: 3%;
-   
   }
   .footer .top .footerDetails li:nth-child(3) {
     font-size: 1rem;
@@ -1030,3 +1031,488 @@ button {
     color: white;
   }
 }
+
+/*small pc*/
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .navCont {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+  }
+  .navCont ul {
+    display: none;
+  }
+  .navCont .logoMobile {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 20px;
+  }
+  .navCont .logoMobile img {
+    display: flex;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navCont .logoMobile span {
+    flex: 1;
+  }
+  .navCont .logoMobile #toggleIcon {
+    display: flex;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .offCanvasMenu {
+    background: var(--blueTwo);
+    width: 60%; /* Updated width to take up full screen */
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  .offCanvasMenu li {
+    min-height: 5vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .offCanvasMenu li button {
+    background: var(--blueTwo);
+    height: 5vh;
+    border: none;
+    color: white;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  
+/*WELCOME COMP*/
+.welcome {
+  width: 90%;
+  min-height: 0vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcome .welcomeChild {
+  height: 90vh;
+  width: 60%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome .welcomeChild img {
+  width:90%;
+}
+.welcome .left {
+  width: 60%;
+}
+.welcome .right {
+  width: 40%;
+
+}
+.welcome .left h1 {
+  min-height: 3vh;
+  color: var(--green);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.welcome .left h2 {
+  min-height: 3vh;
+  background: linear-gradient(
+    to top,
+    var(--blueTwo),
+    var(--blueTwo),
+    var(--blue)
+  );
+  background-clip: text;
+  color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.welcome .left p {
+  min-height: 10vh;
+  color: rgb(187, 187, 187);
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.welcome .buttonHolder {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+
+.welcome .buttonHolder button {
+  border: none;
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(
+    to top,
+    var(--blueTwo),
+    var(--blueTwo),
+    var(--blue)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.welcome .buttonHolder button:nth-child(2) {
+  width: 35%;
+  background: var(--green);
+}
+  
+/*splitter*/
+
+
+.splitter span {
+
+  margin-left: 10rem;
+}
+
+.splitter p {
+
+  font-size: 2rem;
+  background-clip: text;
+}
+
+.splitter p span {
+  width: 30%;
+  height: 90%;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    to top,
+    var(--blueTwo),
+    var(--blueTwo),
+    var(--blue)
+  );
+  color: transparent;
+  background-clip: text;
+  margin-left: 0;
+}
+  
+/*why section*/
+
+
+
+
+.why .box h1 {
+
+  font-size: 1.3rem;
+}
+
+.why .box p {
+
+  font-size: 0.8rem;
+}
+/*solutions section*/
+
+.solutions {
+  width: 90%;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.solutions .box {
+  min-height: 10vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.solutions .box h1 {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  background: linear-gradient(
+    to top,
+    var(--blueTwo),
+    var(--blueTwo),
+    var(--blue)
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.solutions .box p {
+  height: 5vh;
+  width: 80%;
+  display: flex;
+  text-align: left;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  color: var(--lightGrey);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.solutions .box button {
+  height: 5vh;
+  width: 30%;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+  color: white;
+  background: linear-gradient(
+    to top,
+    var(--blueTwo),
+    var(--blueTwo),
+    var(--blue)
+  );
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+  .coloredSplitter {
+    background: var(--green);
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 1rem;
+    gap: 0.9rem;
+    padding: 1rem;
+  }
+
+  .coloredSplitter p {
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .coloredSplitter button {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: 6vh;
+    width: 15%;
+    padding: 1.2rem;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(
+      to top,
+      var(--blueTwo),
+      var(--blueTwo),
+      var(--blue)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .footer {
+    background: linear-gradient(
+      to top,
+      var(--blueTwo),
+      var(--blueTwo),
+      var(--blue)
+    );
+    height: 10vh;
+    width: 100%;
+    display: none;
+    margin-top: 0rem;
+  }
+
+  .footer .top {
+    width: 100%;
+    height: 70%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .footer .top ul {
+    width: 90%;
+    min-height: 30%;
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+  }
+
+  .footer .top ul li {
+    width: 95%;
+    min-height: 30%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flexstart;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .footer .top ul li:nth-child(1) {
+    width: 100%;
+    min-height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 4rem;
+  }
+
+  .footer .top ul li:nth-child(1) img {
+    width: 70%;
+    min-height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .footer .top .footerDetails {
+    width: 90%;
+    min-height: 30%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer .top .footerDetails li:nth-child(1) {
+    font-size: 1rem;
+    font-weight: normal;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer .top .footerDetails li:nth-child(2) {
+    font-size: 1rem;
+    font-weight: normal;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+
+    min-height: 0vh;
+    gap: 3%;
+  }
+  .footer .top .footerDetails li:nth-child(3) {
+    font-size: 1rem;
+    font-weight: normal;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 0vh;
+    gap: 3%;
+  }
+
+  .footer .top .footerDetails li:nth-child(4) {
+    font-size: 1rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer .top .footerDetails li p {
+    width: 100%;
+    height: 3vh;
+  }
+  .footer .bottom {
+    width: 90%;
+    min-height: 10%;
+    border: solid white;
+    display: flex;
+  }
+
+  .footer .bottom p {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+}
+
