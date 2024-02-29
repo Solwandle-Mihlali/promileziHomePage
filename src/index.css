@@ -1,15 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
-
 }
-body{
+body {
   min-height: 100vh;
   width: 100%;
-  background: rgb(170, 14, 14);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }

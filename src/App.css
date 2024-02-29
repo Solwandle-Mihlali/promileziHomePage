@@ -24,9 +24,10 @@
 button {
   border: none;
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
+
 
 .navCont {
   width: 90%;
@@ -62,7 +63,7 @@ button {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 1rem;
   color: black;
 }
 .navCont ul li:nth-child(1) {
@@ -103,14 +104,13 @@ button {
 }
 
 .welcome .welcomeChild img {
-  width: 60%;
+  width: 50%;
 }
 .welcome .left {
   width: 40%;
 }
 .welcome .right {
   width: 60%;
-  display: grid;
   align-items: center;
 }
 .welcome .left h1 {
@@ -120,7 +120,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .welcome .left h2 {
@@ -137,9 +137,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 20rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 20rem;
+  line-height: 4rem;
 }
 
 .welcome .left p {
@@ -149,10 +149,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 4rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .welcome .buttonHolder {
@@ -199,7 +199,7 @@ button {
 
 .splitter span {
   width: 0.5%;
-  height: 50%;
+  height: 60%;
   background: var(--green);
   margin-left: 25rem;
 }
@@ -207,7 +207,7 @@ button {
 .splitter p {
   width: 30%;
   height: 90%;
-  font-size: 8rem;
+  font-size: 4rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -275,7 +275,7 @@ button {
   justify-content: center;
   text-align: center;
   color: var(--lightGrey);
-  font-size: 4.5rem;
+  font-size: 1.4rem;
 }
 
 .why .box p {
@@ -286,7 +286,7 @@ button {
   justify-content: center;
   text-align: center;
   color: var(--lightGrey);
-  font-size: 3.5rem;
+  font-size:1.2rem;
 
   padding-left: 20px;
 }
@@ -319,7 +319,7 @@ button {
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  font-size: 4.5rem;
+  font-size: 1.4rem;
   background: linear-gradient(
     to top,
     var(--blueTwo),
@@ -338,10 +338,11 @@ button {
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  font-size: 3.5rem;
+  font-size: 1.2rem;
   color: var(--lightGrey);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
 }
 
 .solutions .box button {
@@ -351,7 +352,7 @@ button {
   text-align: left;
   justify-content: center;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 1rem;
   color: white;
   background: linear-gradient(
     to top,
@@ -378,14 +379,14 @@ button {
 .coloredSplitter p {
   color: white;
   width: 70%;
-  font-size: 6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
 }
 
 .coloredSplitter button {
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
   height: 5vh;
   width: 10%;
@@ -443,7 +444,7 @@ button {
   align-items: center;
   justify-content: flexstart;
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -455,7 +456,7 @@ button {
   align-items: center;
   justify-content: flex-start;
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 4rem;
 }
@@ -468,7 +469,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -482,7 +483,7 @@ button {
 }
 
 .footer .top .footerDetails li:nth-child(1) {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -494,7 +495,7 @@ button {
 }
 
 .footer .top .footerDetails li:nth-child(2) {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -508,7 +509,7 @@ button {
   gap: 3%;
 }
 .footer .top .footerDetails li:nth-child(3) {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -522,7 +523,7 @@ button {
 }
 
 .footer .top .footerDetails li:nth-child(4) {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -548,11 +549,12 @@ button {
   width: 27%;
   height: 100%;
   display: flex;
-  font-size: 3rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   color: white;
 }
+
 
 /*phones and tabs*/
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -1033,7 +1035,7 @@ button {
 }
 
 /*small pc*/
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
+@media screen and (min-width: 1025px) and (max-width:1600px) {
   .navCont {
     width: 90%;
     height: 10vh;
